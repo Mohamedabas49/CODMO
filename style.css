@@ -1,0 +1,262 @@
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    margin: 0;
+    padding: 0;
+    background-color: #31363F;
+    overflow-x: hidden; /* تجنب التمدد الأفقي */
+    overflow-y: hidden; /* تمكين التمرير الرأسي إذا لزم الأمر */
+}
+
+h1 {
+    text-align: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.menu-container {
+    position: relative;
+    display: inline-block;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: white;
+    padding: 0px;
+    font-size: 40px;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    z-index: 2;
+}
+
+.menu-icon {
+    display: inline;
+}
+
+.close-icon {
+    display: none;
+}
+
+.menu-button.show .menu-icon {
+    display: none;
+}
+
+.menu-button.show .close-icon {
+    display: inline;
+}
+
+.menu-content {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #31363F;
+    width: 250px;
+    height: 100vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu-content a {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: black;
+    padding: 22px 40%;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+.menu-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.menu-content.show {
+    display: flex;
+}
+
+.box {
+    background-color: #222831;
+}
+
+.logo {
+    margin-right: 30px;
+    width: 250px;
+    height: 90px;
+    margin-top: 5px;
+}
+
+.boxx {
+    background: -webkit-linear-gradient(90deg, #0033ca, #ff8328);
+    background: linear-gradient(90deg, #0033ca, #ff8328);
+    height: 100vh;
+}
+
+.log {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 200px;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Lucida Handwriting", cursive;
+    padding-top: 25px;
+    text-align: center;
+    font-size: 25px;
+    color: #CCFFFF;
+}
+
+.logoo {
+    width: 200px;
+    height: 90px;
+}
+
+#coco {
+    text-align: center;
+    margin-top: 250px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+#coce {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.boxxx {
+    background: #31363F;
+    background: -webkit-linear-gradient(90deg, #5bcea9, #df25a3);
+    background: linear-gradient(90deg, #5bcea9, #df25a3);
+    height: 100vh;
+}
+
+.lo {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 280px;
+    align-items: center;
+    margin-top: 35px;
+}
+
+#cocoo {
+    font-family: serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+#cocee {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-top: 180px;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+#cocer {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+.boxxxx {
+    background: #31363F;
+    background: -webkit-linear-gradient(90deg, #767d8d, #3c3c3b);
+    background: linear-gradient(90deg, #767d8d, #3c3c3b);
+    height: 100vh;
+}
+
+.le {
+    position: absolute;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    height: 280px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+#cccc {
+    font-family: serif;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 0px;
+    padding-top: 10px;
+    margin-top: 20px;
+}
+
+#ccco {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin-top: 230px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    position: fixed;
+    bottom: 20px; /* يمكنك تعديل الارتفاع حسب الحاجة */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+    z-index: 3; /* تأكد من أن الأيقونات تظهر فوق أي محتوى آخر */
+}
+
+.social-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+}
+
+.facebook {
+    background-color: #3b5998; /* لون خلفية فيسبوك */
+}
+
+.whatsapp {
+    background-color: #25D366; /* لون خلفية واتساب */
+}
+
+.github {
+    background-color: #24292f; /* لون خلفية جيت هب */
+}
+
+.facebook i::before {
+    content: '\f09a'; /* FontAwesome Unicode for Facebook */
+}
+
+.whatsapp i::before {
+    content: '\f232'; /* FontAwesome Unicode for WhatsApp */
+}
+
+.github i::before {
+    content: '\f09b'; /* FontAwesome Unicode for GitHub */
+}
